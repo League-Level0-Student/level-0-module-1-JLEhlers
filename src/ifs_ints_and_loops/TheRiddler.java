@@ -15,15 +15,29 @@ public class TheRiddler {
 int score=0;
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
 JOptionPane.showMessageDialog(null, "Answer my riddles.");
-JOptionPane.showInputDialog("A box without hinges, key, or lid, yet golden treasure inside is hid.");
+String question;
+question=JOptionPane.showInputDialog("A box without hinges, key, or lid, yet golden treasure inside is hid.");
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-if ()
+if (question.equals("egg")) {
+JOptionPane.showMessageDialog(null, "Correct");
+score++;
+}
 		// 5. Otherwise, say "wrong" and tell them the answer
-
+else {
+JOptionPane.showMessageDialog(null, "Wrong, the answer is egg");	
+}
 		// 6. Add some more riddles
-
+String question2;
+question2=JOptionPane.showInputDialog("Everbody has me, but nobody can lose me");
+if(question2.equals("shadow")) {
+JOptionPane.showMessageDialog(null, "Correct");	
+score++;
+}
+else {
+JOptionPane.showMessageDialog(null, "Wrong, the answer is shadow");	
+}
 		// 2. Make a pop up to show the score.
-		
+JOptionPane.showMessageDialog(null, score);
 	}
 }
 
